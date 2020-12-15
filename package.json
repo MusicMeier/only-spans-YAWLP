@@ -20,5 +20,6 @@
   "devDependencies": {
     "@babel/core": "~7.9.0"
   },
-  "private": true
+  "private": true,
+  "name": "only-spans-YAWLP"
 }

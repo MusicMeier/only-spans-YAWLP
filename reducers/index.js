@@ -1,11 +1,15 @@
 import React from 'react';
+import { combineReducers } from 'redux'
 
-const index = () => {
-  return (
-    <div>
-      
-    </div>
-  );
+const restaurants = (state=[], action) => {
+  switch(action.type){
+    case "SET_RESTAURANTS":
+      return action.restaurants
+    default:
+      return state
+  }
 }
 
-export default index;
+export default combineReducers({
+  restaurants,
+});
